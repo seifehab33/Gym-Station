@@ -1,0 +1,104 @@
+.Testimonlios {
+  display: flex;
+  gap: 1rem;
+  padding: 7rem 2rem;
+  background-color: var(--background-color);
+}
+.left-t {
+  display: flex;
+  flex: 1 1;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.left-t > :nth-child(1) {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.left-t > :nth-child(2),
+.left-t > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.left-t > :nth-child(2) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.right-t {
+  flex: 1;
+  position: relative;
+}
+.right-t > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  bottom: 2rem;
+}
+.right-t > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid var(--orange);
+  background-color: transparent;
+  bottom: 2.5rem;
+  right: 9rem;
+}
+.right-t > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  background-color: var(--orange);
+  bottom: 0.9rem;
+  right: 7rem;
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  gap: 1rem;
+}
+.arrows > img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .Testimonlios {
+    flex-direction: column;
+    gap: 2rem !important;
+  }
+  .right-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem !important;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+    gap: 1rem;
+  }
+}

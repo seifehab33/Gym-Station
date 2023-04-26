@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "framer-motion": "^8.1.9",
+    "react-countup": "^6.4.0",
+    "react-router-dom": "^6.6.1",
+    "react-scroll": "^1.8.9"
+  }
+}
