@@ -5,10 +5,10 @@ import hero_image_back from "../images/hero_image_back.png";
 import heart from "../images/heart.png";
 import calories from "../images/calories.png";
 import "./Hero.css";
-import { motion } from "framer-motion";
-import CountUp from "react-countup";
+// import { motion } from "framer-motion";
+// import CountUp from "react-countup";
 const Hero = () => {
-  const transition = { type: "spring", duration: 3 };
+  // const transition = { type: "spring", duration: 3 };
   return (
     <div className="hero" id="hero">
       <div className="left-h">
